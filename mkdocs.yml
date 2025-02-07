@@ -16,7 +16,7 @@ jobs:
       - name: Set up Python 3.13
         uses: actions/setup-python@v2
         with:
-          python-version: '3.13'
+          python-version: "3.13"
 
       - name: Install requirements
         run: |
@@ -29,7 +29,6 @@ jobs:
 
 site_name: AOSMS Code
 site_url: https://aosmscode.com
-
 theme:
   name: readthedocs
   color_mode: dark
