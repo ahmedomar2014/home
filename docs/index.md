@@ -17,7 +17,7 @@ You can download this project by pressing [Here]()
 
 #### **Description**
 
-TJS is a Javascript IDE by **_AOSMS Code_** for **_Windows_**.
+TJS is a Javascript IDE for **_Windows_**.
 That is powered by **_Tlock_**
 
 #### **Features**
@@ -37,7 +37,7 @@ You can download this project by pressing [Here]()
 
 #### **Description**
 
-LIDE is a python IDE by **_AOSMS Code_** for **_Windows_**.
+LIDE is a python IDE for **_Windows_**.
 
 #### **Features**
 
@@ -55,7 +55,7 @@ You can download this project by pressing [Here]()
 
 #### **Description**
 
-TLIDE is a python IDE by **_AOSMS Code_** for **_Windows_**.
+TLIDE is a python IDE for **_Windows_**.
 That is powered by **_Tlock_**
 
 #### **Features**
@@ -75,7 +75,7 @@ You can download this project by pressing [Here]()
 
 #### **Description**
 
-JSIDE is a Javascript IDE by **_AOSMS Code_** for **_Windows_**.
+JSIDE is a Javascript IDE for **_Windows_**.
 
 #### **Features**
 
