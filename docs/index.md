@@ -1,4 +1,4 @@
-# **AOSMS Code**
+# **Ahmed Omar's Software Projects**
 
 ## **Latest Projects:**
 
@@ -171,4 +171,4 @@ accelerate.joined_thread(main)
 You can get help by contacting us by these ways:
 
 - Phone Number: +201040946638
-- Email: aosmscode@outlook.com
+- Email: ahmedomardev@outlook.com
