@@ -27,8 +27,8 @@ jobs:
           git pull
           mkdocs gh-deploy
 
-site_name: AOSMS Code
-site_url: https://aosmscode.com
+site_name: Ahmed Omar's Software Projects
+site_url: https://ahmedomarsoftware.com
 theme:
   name: mkdocs
   color_mode: dark
