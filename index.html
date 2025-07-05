@@ -25,9 +25,22 @@
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
                 <a class="navbar-brand" href=".">Ahmed Omar's Software Projects</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <!-- Expanded navigation -->
                 <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="." class="nav-link active" aria-current="page">Ahmed Omar's Software Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Quick%20Start%20Guide/" class="nav-link">Quick Start Guide for FTPChat</a>
+                            </li>
+                        </ul>
 
                     <ul class="nav navbar-nav ms-md-auto">
                         <li class="nav-item">
@@ -35,6 +48,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="Quick%20Start%20Guide/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                             <li class="nav-item dropdown">
                               <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
                                 <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
@@ -102,12 +125,10 @@
 
 <h1 id="ahmed-omars-software-projects"><strong>Ahmed Omar's Software Projects</strong></h1>
 <h2 id="latest-projects"><strong>Latest Projects:</strong></h2>
-<h3 id="ftcp-file-transfer-chatting-protocol"><strong>FTCP (File Transfer Chatting Protocol)</strong></h3>
+<h3 id="ftpchat-project-file-transfer-protocol-chatting-project"><strong>FTPChat Project (File Transfer Protocol Chatting Project)</strong></h3>
 <h4 id="description"><strong>Description</strong></h4>
-<p>FTCP is a chatting protocol that enables writing and reading messages in a file, supporting group chats
-with high security levels powered by <strong><em>Tlock Encryption Algorithms</em></strong> stored on an FTP server.
-Written in Python.</p>
-<p>You can also download our official chatting app for FTCP chatting protocol <a href="">Here</a></p>
+<p>FTPChat is a communication protocol that makes messaging by performing read and write operations on a file located on an FTP server. The protocol is made using Python.</p>
+<p>You can download this project by pressing <a href="">Here</a></p>
 <hr />
 <h3 id="tlock-project"><strong>Tlock Project</strong></h3>
 <h4 id="description_1"><strong>Description</strong></h4>
@@ -191,7 +212,7 @@ print(&quot;Hello, World!&quot;);
 <hr />
 <h3 id="aosp-programming-language-apl"><strong>AOSP PROGRAMMING LANGUAGE (APL)</strong></h3>
 <h4 id="description_8"><strong>Description</strong></h4>
-<p>AOSP is a programming language that is so easy to learn with our new chatting protocol. Written in python</p>
+<p>AOSP is a programming language that is easy to learn with our new chatting protocol. Written in python</p>
 <h4 id="code-example"><strong>Code Example</strong></h4>
 <pre><code class="language-python">from modules import console
 from modules import character_properties as charp
@@ -330,5 +351,5 @@ accelerate.joined_thread(main)
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2025-05-27 23:16:46.468008+00:00
+Build Date UTC : 2025-07-05 09:51:56.457967+00:00
 -->
