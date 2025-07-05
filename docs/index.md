@@ -2,6 +2,17 @@
 
 ## **Latest Projects:**
 
+### **FTPChat Project (File Transfer Protocol Chatting Project)**
+
+#### **Description**
+
+FTPChat is a communication protocol that makes messaging by performing read and write operations on a file located on an FTP server. The protocol is made using Python.
+
+
+You can download this project by pressing [Here]()
+
+---
+
 ### **Tlock Project**
 
 #### **Description**
@@ -89,16 +100,20 @@ You can download this project by pressing [Here]()
 
 ---
 
-### **AOSMS To Do Project**
+### **AOSP To Do Project**
 
 #### **Description**
 
-AOSMS To Do is a to do app that powered by **_Tlock_** that
+AOSP To Do is a to do app that powered by **_Tlock_** that
 it can encrypt to do list and decrypt to do list with **_48 LAYERS OF ENCRYPTION_**. Written in **_Python_**
+
+You can download this project by pressing [Here]()
 
 ---
 
-### **AOSMS Javascript (AJS)**
+### **AOSP Javascript (AJS)**
+
+#### **Description**
 
 AJS is a small superset of JavaScript that provides **_Python-like Syntax_**. Written in JavaScript
 
@@ -113,11 +128,15 @@ print("Hello, World!");
 // There are many other things to import like str, input, float, calculator
 ```
 
+You can download this project by pressing [Here]()
+
 ---
 
-### **AOSMS PROGRAMMING LANGUAGE (APL)**
+### **AOSP PROGRAMMING LANGUAGE (APL)**
 
-APL is a programming language that is so easy to learn. Written in python
+#### **Description**
+
+AOSP is a programming language that is easy to learn with our new chatting protocol. Written in python
 
 #### **Code Example**
 
@@ -165,6 +184,20 @@ def main():
 accelerate.joined_thread(main)
 
 ```
+
+You can download this project by pressing [Here]()
+
+---
+
+### **Sibha Project**
+
+#### **Description**
+
+Sibha is a tasbeeh app that is written in **_Python_**
+
+You can download this project by pressing [Here]()
+
+---
 
 ## **Keep In Touch!**
 
