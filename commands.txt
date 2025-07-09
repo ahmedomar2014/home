@@ -1,0 +1,7 @@
+git config --global user.email "ahmedomardev@outlook.com"
+git config --global user.name "ahmedomar2014"
+git add .
+git commit -m 'init'
+git push
+mkdocs gh-deploy
+rm -r site
