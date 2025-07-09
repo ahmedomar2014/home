@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://ahmedomarsoftware.com/Quick%20Start%20Guide/">
+        <link rel="canonical" href="https://ahmedomarsoftware.com/Quick%20Start%20Guide%20%28Making%20FTP%20Server%29/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Quick Start Guide for FTPChat - Ahmed Omar's Software Projects</title>
+        <title>Quick Start Guide for FTPChat (Making FTP Server) - Ahmed Omar's Software Projects</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -38,10 +38,10 @@
                                 <a href=".." class="nav-link">Ahmed Omar's Software Projects</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../Quick%20Start%20Guide%20%28Making%20FTP%20Server%29/" class="nav-link">Quick Start Guide for FTPChat (Making FTP Server)</a>
+                                <a href="./" class="nav-link active" aria-current="page">Quick Start Guide for FTPChat (Making FTP Server)</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./" class="nav-link active" aria-current="page">Quick Start Guide for FTPChat</a>
+                                <a href="../Quick%20Start%20Guide/" class="nav-link">Quick Start Guide for FTPChat</a>
                             </li>
                         </ul>
 
@@ -52,12 +52,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../Quick%20Start%20Guide%20%28Making%20FTP%20Server%29/" class="nav-link">
+                                <a rel="prev" href=".." class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
+                                <a rel="next" href="../Quick%20Start%20Guide/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -109,33 +109,37 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#quick-start-guide-for-ftpchat" class="nav-link">Quick Start Guide for FTPChat</a>
+            <li class="nav-item" data-bs-level="1"><a href="#quick-start-guide-for-ftpchat-making-ftp-server" class="nav-link">Quick Start Guide for FTPChat (Making FTP Server)</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#recommended-hardware" class="nav-link">📡 Recommended Hardware</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#prerequisites" class="nav-link">📝 Prerequisites</a>
+            <li class="nav-item" data-bs-level="2"><a href="#requirements" class="nav-link">🧰 Requirements</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#configuration-procedure" class="nav-link">⚙️ Configuration Procedure</a>
+            <li class="nav-item" data-bs-level="2"><a href="#step-1-prepare-usb-storage" class="nav-link">🔌 Step 1: Prepare USB Storage</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#troubleshooting-and-optimization" class="nav-link">🔍 Troubleshooting and Optimization</a>
+            <li class="nav-item" data-bs-level="2"><a href="#step-2-access-router-admin-panel" class="nav-link">🌐 Step 2: Access Router Admin Panel</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#applications" class="nav-link">🎯 Applications</a>
+            <li class="nav-item" data-bs-level="2"><a href="#step-3-enable-ftp-server" class="nav-link">⚙️ Step 3: Enable FTP Server</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#additional-considerations" class="nav-link">📘 Additional Considerations</a>
+            <li class="nav-item" data-bs-level="2"><a href="#step-4-test-ftp-access-locally" class="nav-link">🧪 Step 4: Test FTP Access Locally</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#links" class="nav-link">🌐 Links</a>
+            <li class="nav-item" data-bs-level="2"><a href="#ftp-user-network-capacity" class="nav-link">📊 FTP User &amp; Network Capacity</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#setup-complete" class="nav-link">✅ Setup Complete</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#additional-information" class="nav-link">🌐 Additional Information</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -146,80 +150,107 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="quick-start-guide-for-ftpchat">Quick Start Guide for FTPChat</h1>
-<p>This document outlines the procedure for configuring a home router with a USB interface as an FTP server. The recommended model for this setup is the <strong>D-Link Dual Band Wireless AC1200 VDSL Modem Router (DSL-245GE)</strong> due to its robust feature set and reliable performance.</p>
+<h1 id="quick-start-guide-for-ftpchat-making-ftp-server">Quick Start Guide for FTPChat (<strong>Making FTP Server</strong>)</h1>
+<h3 id="using-zte-zxhn-h188a-supervectoring-telecom-egypt-ftp-server-setup-guide">Using <strong>ZTE ZXHN H188A</strong> SuperVectoring (Telecom Egypt) — FTP Server Setup Guide</h3>
+<p>Transform your Telecom Egypt-issued H188A router into a USB-powered FTP server using its default functionality — no firmware flashing or OpenWRT required.</p>
 <hr />
-<h2 id="recommended-hardware">📡 Recommended Hardware</h2>
-<h3 id="d-link-dsl-245ge-key-features">D-Link DSL-245GE – Key Features</h3>
+<h2 id="requirements">🧰 Requirements</h2>
 <ul>
-<li>Dual-band wireless connectivity with AC1200 throughput</li>
-<li>Integrated VDSL modem functionality</li>
-<li>USB 2.0 port supporting external storage devices</li>
-<li>Native support for FTP and Samba services</li>
-<li>User-friendly configuration interface</li>
-</ul>
-<hr />
-<h2 id="prerequisites">📝 Prerequisites</h2>
-<p>To proceed with the configuration, ensure the following components are available:</p>
-<ul>
-<li>✅ D-Link DSL-245GE Router (or any compatible router supporting FTP and USB storage)</li>
-<li>✅ External storage device (USB flash drive or external HDD/SSD), formatted using NTFS or FAT32</li>
-<li>✅ Computer connected to the router's local area network (LAN)</li>
+<li><strong>ZTE ZXHN H188A</strong> router (Telecom Egypt / WE)</li>
+<li>USB flash drive formatted as FAT32 or NTFS</li>
+<li>PC or server connected to the router (Windows or Linux)</li>
+<li>Router login credentials (default: <code>admin</code> / check label for password)</li>
 </ul>
 <hr />
-<h2 id="configuration-procedure">⚙️ Configuration Procedure</h2>
-<h3 id="step-1-connect-usb-storage-device">Step 1: Connect USB Storage Device</h3>
-<ul>
-<li>Insert the USB storage device into the router’s designated USB port</li>
-<li>Confirm device detection via the router’s management interface</li>
-</ul>
-<h3 id="step-2-access-web-interface">Step 2: Access Web Interface</h3>
-<ul>
-<li>Open a browser and navigate to <code>192.168.1.1</code> or the assigned local IP</li>
-<li>Authenticate using administrative credentials</li>
-</ul>
-<h3 id="step-3-activate-ftp-functionality">Step 3: Activate FTP Functionality</h3>
-<ul>
-<li>Navigate to: <strong>USB Settings</strong> → <strong>FTP Server</strong></li>
-<li>Enable the <strong>FTP Server</strong> toggle</li>
-<li>Configure the following parameters:</li>
-<li>Directory Path: <code>/usb1_1/</code> (depending on router’s storage mapping)</li>
-<li>Authentication: Enable login protection</li>
-<li>FTP Port: <code>21</code> (default)</li>
-<li>Access Mode: LAN only or WAN if external connectivity is required</li>
-</ul>
-<h3 id="step-4-manage-user-access">Step 4: Manage User Access</h3>
-<ul>
-<li>Create user profiles with individual credentials</li>
-<li>Define read/write permissions per user</li>
-<li>Save and apply configuration settings</li>
-</ul>
-<h3 id="step-5-validate-ftp-connectivity">Step 5: Validate FTP Connectivity</h3>
-<ul>
-<li>Launch an FTP client (e.g., FileZilla) or access via browser or windows file explorer and try copying file in the 
-directory that starts with <code>usb</code></li>
-</ul>
-<h2 id="troubleshooting-and-optimization">🔍 Troubleshooting and Optimization</h2>
-<ul>
-<li>USB formatting should use <strong>NTFS</strong> for large file handling</li>
-<li>Restart the router if USB storage is not recognized</li>
-<li>Verify router firewall permissions for FTP traffic</li>
-<li>Utilize strong, secure passwords for all user accounts</li>
-</ul>
+<h2 id="step-1-prepare-usb-storage">🔌 Step 1: Prepare USB Storage</h2>
+<ol>
+<li>Format the USB drive as FAT32 or NTFS.</li>
+<li>Create folders such as <code>/Public</code>, <code>/Media</code>, or <code>/Shared</code>.</li>
+<li>Insert the USB drive into the router’s rear USB 2.0 port.</li>
+<li>Wait 10–20 seconds for detection.</li>
+</ol>
 <hr />
-<h2 id="applications">🎯 Applications</h2>
-<ul>
-<li>Internal file sharing across LAN-connected devices</li>
-<li>Remote access to personal media or documents</li>
-<li>Localized backup and storage solutions</li>
+<h2 id="step-2-access-router-admin-panel">🌐 Step 2: Access Router Admin Panel</h2>
+<ol>
+<li>Launch a browser and go to: <code>http://192.168.1.1</code>.</li>
+<li>Log in with credentials:</li>
+<li>Username: <code>admin</code></li>
+<li>Password: (found on router label)</li>
+</ol>
+<hr />
+<h2 id="step-3-enable-ftp-server">⚙️ Step 3: Enable FTP Server</h2>
+<ol>
+<li>Navigate to: <code>Application &gt; USB Storage &gt; FTP Server</code>.</li>
+<li>Enable the FTP service.</li>
+<li>Choose folders on the USB to share.</li>
+<li>Set access preferences:</li>
+<li><strong>Anonymous</strong> (optional)</li>
+<li><strong>User-based</strong> (recommended):<ul>
+<li>Username: <code>ftpuser</code></li>
+<li>Password: <code>yourpassword</code></li>
+<li>Permission: Read/Write or Read-Only</li>
 </ul>
+</li>
+</ol>
 <hr />
-<h2 id="additional-considerations">📘 Additional Considerations</h2>
-<p>While this guide emphasizes the DSL-245GE model, similar procedures are applicable across various USB-capable routers with embedded FTP server functionality.</p>
+<h2 id="step-4-test-ftp-access-locally">🧪 Step 4: Test FTP Access Locally</h2>
+<h3 id="windows">🖥️ Windows</h3>
+<ul>
+<li>Open File Explorer</li>
+<li>Enter: <code>ftp://192.168.1.1</code> in the address bar</li>
+<li>Enter credentials if prompted</li>
+</ul>
+<h3 id="linux-with-curl">🖥️ Linux (with <code>curl</code>)</h3>
+<pre><code class="language-bash">curl ftp://ftpuser:yourpassword@192.168.1.1/
+</code></pre>
+<blockquote>
+<p>💡 Replace <code>ftpuser</code> and <code>yourpassword</code> with your actual login. The command lists shared folder contents.</p>
+</blockquote>
 <hr />
-<p><em>This quick start guide makes efficient file distribution and personal cloud access using residential network infrastructure.</em></p>
-<h2 id="links">🌐 Links</h2>
-<p>D-Link Dual Band Wireless AC1200 VDSL Modem Router (DSL-245GE) : <a href="https://www.amazon.eg/-/en/D-Link-Wireless-AC1200-Router-DSL-245GE/dp/B09MMSPJDG/ref=sr_1_4?crid=3XTKMTQA9D0&amp;dib=eyJ2IjoiMSJ9.gC1n6l6fG5VEj-PJ7XiMYBCuOoa7V2imJRvZt5wcZyWXZvF_t3V38mFCGqKRA94kFSKWblX6ogHhmsGRXfgZSE8IjPVknLAIMD_LJEIqC3Zg8bPdxwEMTe13y2xWH5UnO5wtsgWr_g0bdXdQI5RzNLKCK8ZxRCPuBFQpz2Y1HrICozflX_vIxBmFNL_FGuMZIS264PnCKNgF59OmKvk9-IqXT0KVy6D2jdS4ML0S5lAXbqGOHXCQEnrQqDZDyp3nNshi8D48c-qSLQg-XOUR82GuLMnUo1bUo5IIJIkonLE.Odk0kZZAEdLwOAYO6iqW7HDuQZqSBtcaNnqRA2pmw_o&amp;dib_tag=se&amp;keywords=dlink&amp;qid=1751670760&amp;sprefix=dlink%2Caps%2C280&amp;sr=8-4">Buying Link</a></p></div>
+<h2 id="ftp-user-network-capacity">📊 FTP User &amp; Network Capacity</h2>
+<table>
+<thead>
+<tr>
+<th>Interface</th>
+<th>Max Devices</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2.4 GHz Wi-Fi</strong></td>
+<td>~32 users</td>
+<td>Light browsing and file access</td>
+</tr>
+<tr>
+<td><strong>5 GHz Wi-Fi</strong></td>
+<td>~32 users</td>
+<td>Ideal for FTP and media streaming</td>
+</tr>
+<tr>
+<td><strong>LAN Ports</strong></td>
+<td>3 devices</td>
+<td>Stable, high-speed transfers</td>
+</tr>
+<tr>
+<td><strong>FTP Users</strong></td>
+<td>5–10 users</td>
+<td>Stable performance recommended</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🧠 For simultaneous large file transfers, prioritize LAN or 5 GHz. Performance may drop beyond ~10 active users.</p>
+</blockquote>
+<hr />
+<h2 id="setup-complete">✅ Setup Complete</h2>
+<p>Your router is now a functional FTP server, ready to share files across your local network.</p>
+<hr />
+<h2 id="additional-information">🌐 Additional Information</h2>
+<p><strong>ZTE ZXHN H188A</strong> SuperVectoring (Telecom Egypt): <a href="https://bit.ly/supervectoring">Purchase Link</a></p>
+<blockquote>
+<p>To acquire this device, Telecom Egypt partnership is required.</p>
+</blockquote></div>
             </div>
         </div>
 
