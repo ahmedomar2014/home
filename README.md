@@ -186,6 +186,18 @@ accelerate.joined_thread(main)
 ```
 
 You can download this project by pressing [Here]()
+---
+### **GIT File Pusher (GFT)**
+
+#### **Description**
+
+GFT is a project that pushes files to a remote repository. It is designed to automate the process of pushing files to a remote repository
+
+#### **Features**
+
+- **File Pushing**: GFT can push files to a remote repository.
+- **No Command Lines Needed**: GFT does not require any command lines to be entered by the user.
+
 
 ---
 
