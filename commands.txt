@@ -1,7 +1,10 @@
+git init
+git remote add origin https://github.com/ahmedomar2014/yourrepo.git
+git add .
+git commit -m "Initial commit for the site"
+pip install mkdocs
 git config --global user.email "ahmedomardev@outlook.com"
 git config --global user.name "ahmedomar2014"
-git add .
-git commit -m 'init'
-git push
-mkdocs gh-deploy
-rm -r site
+git config --global --add safe.directory D:/Projects/Website/home
+git push -u origin main
+python -m mkdocs gh-deploy
