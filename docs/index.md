@@ -19,6 +19,8 @@ FTPChat is specifically designed for deployment in legacy environments, includin
 - Optimized for legacy hardware and low-power devices
 - Compatible with routers supporting USB and FTP
 - Energy-efficient and environmentally conscious design
+- You can also chat internationally (Non LAN) by using [SFTPCloud Tool](https://sftpcloud.io/tools/free-ftp-server) a free tool that you can make a globally accessible FTP server
+- You can also make it work locally by using our guide `Documentation/Quick Start Guide (Making FTP Server).md`
 
 #### **Protocol Operation:**
 
