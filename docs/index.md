@@ -1,4 +1,4 @@
-# **Ahmed Omar's Software Projects**
+# AOSP
 
 ## _Latest Projects:_
 
@@ -53,200 +53,119 @@ You can find its source code in this repository: https://github.com/ahmedomar201
 
 ---
 
-### **Tlock Project**
+### **Tlock (Text Locker Encryption Protocol)**
 
-#### **Description**
-
-Tlock is a project that encrypts text with _**48 LAYERS OF ENCRYPTION**_
-and it can encrypt text and decrypt text, audio, picture, Python code, etc. Written in **_Python_**.
-
-You can download this project by pressing [Here]()
+**Multi-Format Encryption System**  
+**Version 1.8 — October 2025**  
+**Author:** Ahmed Omar Saad  
+**Contact:** ahmedomardev@outlook.com
 
 ---
 
-### **Tlock Powered Javascript (TJS)**
+#### **Overview:**
 
-#### **Description**
+Tlock is a multi-layered encryption protocol designed to secure text, media, and document files with extreme depth and modularity.  
+Built entirely in Python, it supports GUI-based workflows, password protection, and clipboard automation for fast and secure file handling.
 
-TJS is a Javascript IDE for **_Windows_**.
-That is powered by **_Tlock_**
-
-#### **Features**
-
-- Free.
-- Super Lightweight.
-- Can run, save, and open Javascript code.
-- You can run it without installation.
-- You can make GUI apps.
-- It can encode and decode your code.
-
-You can download this project by pressing [Here]()
+Tlock is optimized for environments that need security, offline workflows.
 
 ---
 
-### **Lite Integrated Development Environment (LIDE)**
+#### **Key Features:**
 
-#### **Description**
-
-LIDE is a python IDE for **_Windows_**.
-
-#### **Features**
-
-- Free.
-- Super Lightweight.
-- Can run, save, and open python code.
-- You can run it without installation.
-- You can make GUI apps.
-
-You can download this project by pressing [Here]()
+- 48-layer encryption cycle
+- Supports text, image, audio, video, document, presentation, and spreadsheet formats
+- GUI interface with password prompts and text-to-speech
+- Clipboard integration for key delivery
+- Threading and multiprocessing support
+- Fully operational within a single `.py` file
 
 ---
 
-### **Tlock Powered Lite Integrated Development Environment (TLIDE)**
+#### **Supported File Types (GUI Menu):**
 
-#### **Description**
-
-TLIDE is a python IDE for **_Windows_**.
-That is powered by **_Tlock_**
-
-#### **Features**
-
-- Free.
-- Super Lightweight.
-- Can run, save, and open python code.
-- You can run it without installation.
-- You can make GUI apps.
-- It can encode and decode your code.
-
-You can download this project by pressing [Here]()
-
----
-
-### **Javascript Integrated Development Environment (JSIDE)**
-
-#### **Description**
-
-JSIDE is a Javascript IDE for **_Windows_**.
-
-#### **Features**
-
-- Free.
-- Super Lightweight.
-- Can run, save, and open Javascript code.
-- You can run it without installation.
-- You can make GUI apps.
-
-You can download this project by pressing [Here]()
+| File Type       | Extension | Menu Label       |
+| --------------- | --------- | ---------------- |
+| Text            | `.tetf`   | Text Files       |
+| Image           | `.teif`   | Image Files      |
+| Audio           | `.teaf`   | Audio Files      |
+| Video           | `.tevf`   | Video Files      |
+| Word Document   | `.tedf`   | Word Files       |
+| PowerPoint      | `.teppf`  | Powerpoint Files |
+| Excel Sheet     | `.teef`   | Excel Files      |
+| Access Database | `.teadf`  | Access Files     |
+| Publisher File  | `.tempf`  | Publisher Files  |
+| OneNote File    | `.temof`  | OneNote Files    |
+| PDF Document    | `.tepf`   | PDF Files        |
+| Zip Archive     | `.tezf`   | Zip Files        |
 
 ---
 
-### **AOSP To Do Project**
+#### **Usage Instructions:**
 
-#### **Description**
+**🔐 To Encrypt Files**:
 
-AOSP To Do is a to do app that powered by **_Tlock_** that
-it can encrypt to do list and decrypt to do list with **_48 LAYERS OF ENCRYPTION_**. Written in **_Python_**
+1. Run `Tlock.exe` on Windows.
+2. Choose the file type you wish to encrypt.
+3. A key will be generated and auto-copied for later access for the file.
+4. The encrypted file will be saved with a `.te*` extension.
 
-You can download this project by pressing [Here]()
+**🔓 To Decrypt Files**:
 
----
+1. Run `Tlock.exe` on Windows.
+2. Choose the file type you wish to decrypt.
+3. Enter the decryption key that was auto-copied.
+4. The decrypted file will be restored to its original format (e.g., `.txt`, `.jpg`, `.mp3`, `.docx`, etc.).
+5. You can view or play the decrypted content immediately after recovery.
 
-### **AOSP Javascript (AJS)**
+**🔐 To Encrypt Text Files**:
 
-#### **Description**
+1. Run `Tlock.exe` on Windows.
+2. Navigate to the **Text Files** menu and select **Save a Tetf**.
+3. Type or paste your text into the input field.
+4. Enter a password when prompted.
+5. Save the encrypted file when prompted. It will be saved with a `.tetf` extension.
 
-AJS is a small superset of JavaScript that provides **_Python-like Syntax_**. Written in JavaScript
+**🔓 To Decrypt Text Files**:
 
-#### How to use AJS ?
-
-To use AJS you should type
-
-```js
-// Example
-import { print } from "./ajs.js";
-print("Hello, World!");
-// There are many other things to import like str, input, float, calculator
-```
-
-You can download this project by pressing [Here]()
-
----
-
-### **AOSP PROGRAMMING LANGUAGE (APL)**
-
-#### **Description**
-
-AOSP is a programming language that is easy to learn with our new chatting protocol. Written in python
-
-#### **Code Example**
-
-```python
-from modules import console
-from modules import character_properties as charp
-from modules import randomizing as rndm
-from modules import accelerate
-from modules import operating_system
-from modules import mathematics
-
-
-def main():
-    console.show(f"Running from {operating_system.get_project_running_path()}")
-
-    name = console.ask("What is your name?\n")
-    console.show(f"Hello {charp.capitalize_first_letter(name)}!")
-
-    num1 = rndm.integer(1, 11)
-    num2 = rndm.integer(1, 11)
-    result = mathematics.add(num1, num2)
-    answer = console.ask(f"Let's do some math!, What is {num1} + {num2}?\n")
-
-    console.if_else(
-        answer == result,
-        "from modules import console; console.show('Correct!')",
-    )
-    console.if_else(
-        answer == result,
-        "from modules import console; console.show('Incorrect')",
-    )
-
-    age = console.ask(f"Is your age {rndm.integer(9, 30)}?\n")
-
-    console.if_else(
-        age == "no",
-        "from modules import console; correct = console.ask('So how old are you?'); console.show(f'Ok, Thanks for using APL!')",
-    )
-    console.if_else(
-        age == "yes",
-        "from modules import console; console.show('Thanks for using APL!')",
-    )
-
-
-accelerate.joined_thread(main)
-
-```
-
-## You can download this project by pressing [Here]()
-
-### **GIT File Pusher (GFT)**
-
-#### **Description**
-
-GFT is a project that pushes files to a remote repository. It is designed to automate the process of pushing files to a remote repository
-
-#### **Features**
-
-- **File Pushing**: GFT can push files to a remote repository.
-- **No Command Lines Needed**: GFT does not require any command lines to be entered by the user.
+1. Run `Tlock.exe` on Windows.
+2. Navigate to the **Text Files** menu and select **Open a Tetf**.
+3. Choose the `.tetf` file you wish to decrypt.
+4. Enter the correct password when prompted.
+5. The decrypted content will be displayed in a new window.
+6. You can optionally activate **Text to Speech** to read the content aloud, but it needs network connection.
 
 ---
 
-### **Sibha Project**
+#### **Performance Benchmark:**
 
-#### **Description**
+- Encrypted approximately 100,000 characters under full 48-layer mode
+- Tested on:
 
-Sibha is a tasbeeh app that is written in **_Python_**
+  - **Intel Core i5-13420H**, RTX 2050 GPU, 16GB RAM DDR5
 
-You can download this project by pressing [Here]()
+    - Result: ~30 seconds
+
+  - **Intel Core i7-8650U**, Intel UHD 620, 16GB RAM DDR3
+    - Result: ~1 minute 30 seconds
+
+- Environment: Windows 11, Python 3.13
+- Result: The program performs faster on higher-end CPUs
+- Note: Less size = Faster speeds and vice versa
+
+---
+
+#### **License:**
+
+Tlock is distributed under a custom MIT-style license.  
+Commercial use requires prior written permission from the author.  
+All rights to the name “Tlock” and its protocol specification are reserved by Ahmed Omar Saad.
+
+For full license details, refer to the `LICENSE` file.
+
+---
+
+Source code: [github.com/ahmedomar2014/Tlock](https://github.com/ahmedomar2014/Tlock), But don't forget to read the license😉.
 
 ---
 
