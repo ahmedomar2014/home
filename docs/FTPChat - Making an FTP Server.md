@@ -1,4 +1,4 @@
-# Quick Start Guide for FTPChat (**Making FTP Server**)
+# **FTPChat - Making an FTP Server**
 
 ### Using **ZTE ZXHN H188A** SuperVectoring (Telecom Egypt) — FTP Server Setup Guide
 
