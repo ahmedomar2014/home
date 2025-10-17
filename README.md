@@ -1,219 +1,178 @@
-# **Ahmed Omar's Software Projects**
+# AOSP
 
-## **Latest Projects:**
+## _Latest Projects:_
 
-### **FTPChat Project (File Transfer Protocol Chatting Project)**
+### **FTPChat (File Transfer Chatting Project)**
 
-#### **Description**
+#### **Overview:**
 
-FTPChat is a communication protocol that makes messaging by performing read and write operations on a file located on an FTP server. The protocol is made using Python.
+FTPChat is a lightweight, encrypted messaging protocol implemented entirely in Python.  
+It facilitates secure communication by reading and writing messages to a shared file hosted on an FTP server.
 
+FTPChat is specifically designed for deployment in legacy environments, including low-power routers equipped with USB and FTP capabilities. This makes it an ideal solution for resource-constrained scenarios or discreet operations.
 
-You can download this project by pressing [Here]()
+#### **Key Features:**
 
----
+- 24-layer encryption ensuring robust payload security
+- File-based transport mechanism utilizing FTP
+- Fully operational within a single `.py` file
+- Optimized for legacy hardware and low-power devices
+- Compatible with routers supporting USB and FTP
+- Energy-efficient and environmentally conscious design
+- You can also chat internationally (Non LAN) by using [SFTPCloud Tool](https://sftpcloud.io/tools/free-ftp-server) a free tool that you can make a globally accessible FTP server
+- You can also make it work locally by using our guide `Documentation/Quick Start Guide (Making FTP Server).md`
 
-### **Tlock Project**
+#### **Protocol Operation:**
 
-#### **Description**
+Messages are exchanged via a shared file on an FTP server.  
+Each message contains a timestamp, username, and encrypted content.  
+The protocol provides:
 
-Tlock is a project that encrypts text with _**48 LAYERS OF ENCRYPTION**_
-and it can encrypt text and decrypt text, audio, picture, Python code, etc. Written in **_Python_**.
+- Conflict-safe message writing
+- Encrypted message formatting
+- Lightweight, file-based communication
 
-You can download this project by pressing [Here]()
+**Note:** FTPChat does not support auto-refresh or background polling.
 
----
+#### **Usage Instructions:**
 
-### **Tlock Powered Javascript (TJS)**
+1. Download `FtpChat.exe` for Windows 10/11, or run the Python script on macOS or Linux.
+2. Activate your FTP server. Refer to `Documentation/Quick Start Guide (Making FTP Server).md` for detailed setup instructions.
+3. Enter your credentials as prompted.
+4. Please review the `Notes Before Starting` section prior to use.
 
-#### **Description**
+#### **License:**
 
-TJS is a Javascript IDE for **_Windows_**.
-That is powered by **_Tlock_**
+FTPChat is distributed under a custom MIT-style license.  
+Commercial use is strictly prohibited without written permission from the author.  
+All rights to the name “FTPChat” and its protocol specification are reserved by Ahmed Omar Saad.
 
-#### **Features**
+For full license details, refer to the `LICENSE
 
-- Free.
-- Super Lightweight.
-- Can run, save, and open Javascript code.
-- You can run it without installation.
-- You can make GUI apps.
-- It can encode and decode your code.
-
-You can download this project by pressing [Here]()
-
----
-
-### **Lite Integrated Development Environment (LIDE)**
-
-#### **Description**
-
-LIDE is a python IDE for **_Windows_**.
-
-#### **Features**
-
-- Free.
-- Super Lightweight.
-- Can run, save, and open python code.
-- You can run it without installation.
-- You can make GUI apps.
-
-You can download this project by pressing [Here]()
+You can find its source code in this repository: https://github.com/ahmedomar2014/FTPChat, But don't forget to read the license😉.
 
 ---
 
-### **Tlock Powered Lite Integrated Development Environment (TLIDE)**
+### **Tlock (Text Locker Encryption Protocol)**
 
-#### **Description**
-
-TLIDE is a python IDE for **_Windows_**.
-That is powered by **_Tlock_**
-
-#### **Features**
-
-- Free.
-- Super Lightweight.
-- Can run, save, and open python code.
-- You can run it without installation.
-- You can make GUI apps.
-- It can encode and decode your code.
-
-You can download this project by pressing [Here]()
+**Multi-Format Encryption System**  
+**Version 1.8 — October 2025**  
+**Author:** Ahmed Omar Saad  
+**Contact:** ahmedomardev@outlook.com
 
 ---
 
-### **Javascript Integrated Development Environment (JSIDE)**
+#### **Overview:**
 
-#### **Description**
+Tlock is a multi-layered encryption protocol designed to secure text, media, and document files with extreme depth and modularity.  
+Built entirely in Python, it supports GUI-based workflows, password protection, and clipboard automation for fast and secure file handling.
 
-JSIDE is a Javascript IDE for **_Windows_**.
-
-#### **Features**
-
-- Free.
-- Super Lightweight.
-- Can run, save, and open Javascript code.
-- You can run it without installation.
-- You can make GUI apps.
-
-You can download this project by pressing [Here]()
+Tlock is optimized for environments that need security, offline workflows.
 
 ---
 
-### **AOSP To Do Project**
+#### **Key Features:**
 
-#### **Description**
-
-AOSP To Do is a to do app that powered by **_Tlock_** that
-it can encrypt to do list and decrypt to do list with **_48 LAYERS OF ENCRYPTION_**. Written in **_Python_**
-
-You can download this project by pressing [Here]()
-
----
-
-### **AOSP Javascript (AJS)**
-
-#### **Description**
-
-AJS is a small superset of JavaScript that provides **_Python-like Syntax_**. Written in JavaScript
-
-#### How to use AJS ?
-
-To use AJS you should type
-
-```js
-// Example
-import { print } from "./ajs.js";
-print("Hello, World!");
-// There are many other things to import like str, input, float, calculator
-```
-
-You can download this project by pressing [Here]()
+- 48-layer encryption cycle
+- Supports text, image, audio, video, document, presentation, and spreadsheet formats
+- GUI interface with password prompts and text-to-speech
+- Clipboard integration for key delivery
+- Threading and multiprocessing support
+- Fully operational within a single `.py` file
 
 ---
 
-### **AOSP PROGRAMMING LANGUAGE (APL)**
+#### **Supported File Types (GUI Menu):**
 
-#### **Description**
-
-AOSP is a programming language that is easy to learn with our new chatting protocol. Written in python
-
-#### **Code Example**
-
-```python
-from modules import console
-from modules import character_properties as charp
-from modules import randomizing as rndm
-from modules import accelerate
-from modules import operating_system
-from modules import mathematics
-
-
-def main():
-    console.show(f"Running from {operating_system.get_project_running_path()}")
-
-    name = console.ask("What is your name?\n")
-    console.show(f"Hello {charp.capitalize_first_letter(name)}!")
-
-    num1 = rndm.integer(1, 11)
-    num2 = rndm.integer(1, 11)
-    result = mathematics.add(num1, num2)
-    answer = console.ask(f"Let's do some math!, What is {num1} + {num2}?\n")
-
-    console.if_else(
-        answer == result,
-        "from modules import console; console.show('Correct!')",
-    )
-    console.if_else(
-        answer == result,
-        "from modules import console; console.show('Incorrect')",
-    )
-
-    age = console.ask(f"Is your age {rndm.integer(9, 30)}?\n")
-
-    console.if_else(
-        age == "no",
-        "from modules import console; correct = console.ask('So how old are you?'); console.show(f'Ok, Thanks for using APL!')",
-    )
-    console.if_else(
-        age == "yes",
-        "from modules import console; console.show('Thanks for using APL!')",
-    )
-
-
-accelerate.joined_thread(main)
-
-```
-
-You can download this project by pressing [Here]()
----
-### **GIT File Pusher (GFT)**
-
-#### **Description**
-
-GFT is a project that pushes files to a remote repository. It is designed to automate the process of pushing files to a remote repository
-
-#### **Features**
-
-- **File Pushing**: GFT can push files to a remote repository.
-- **No Command Lines Needed**: GFT does not require any command lines to be entered by the user.
-
+| File Type       | Extension | Menu Label       |
+| --------------- | --------- | ---------------- |
+| Text            | `.tetf`   | Text Files       |
+| Image           | `.teif`   | Image Files      |
+| Audio           | `.teaf`   | Audio Files      |
+| Video           | `.tevf`   | Video Files      |
+| Word Document   | `.tedf`   | Word Files       |
+| PowerPoint      | `.teppf`  | Powerpoint Files |
+| Excel Sheet     | `.teef`   | Excel Files      |
+| Access Database | `.teadf`  | Access Files     |
+| Publisher File  | `.tempf`  | Publisher Files  |
+| OneNote File    | `.temof`  | OneNote Files    |
+| PDF Document    | `.tepf`   | PDF Files        |
+| Zip Archive     | `.tezf`   | Zip Files        |
 
 ---
 
-### **Sibha Project**
+#### **Usage Instructions:**
 
-#### **Description**
+**🔐 To Encrypt Files**:
 
-Sibha is a tasbeeh app that is written in **_Python_**
+1. Run `Tlock.exe` on Windows.
+2. Choose the file type you wish to encrypt.
+3. A key will be generated and auto-copied for later access for the file.
+4. The encrypted file will be saved with a `.te*` extension.
 
-You can download this project by pressing [Here]()
+**🔓 To Decrypt Files**:
+
+1. Run `Tlock.exe` on Windows.
+2. Choose the file type you wish to decrypt.
+3. Enter the decryption key that was auto-copied.
+4. The decrypted file will be restored to its original format (e.g., `.txt`, `.jpg`, `.mp3`, `.docx`, etc.).
+5. You can view or play the decrypted content immediately after recovery.
+
+**🔐 To Encrypt Text Files**:
+
+1. Run `Tlock.exe` on Windows.
+2. Navigate to the **Text Files** menu and select **Save a Tetf**.
+3. Type or paste your text into the input field.
+4. Enter a password when prompted.
+5. Save the encrypted file when prompted. It will be saved with a `.tetf` extension.
+
+**🔓 To Decrypt Text Files**:
+
+1. Run `Tlock.exe` on Windows.
+2. Navigate to the **Text Files** menu and select **Open a Tetf**.
+3. Choose the `.tetf` file you wish to decrypt.
+4. Enter the correct password when prompted.
+5. The decrypted content will be displayed in a new window.
+6. You can optionally activate **Text to Speech** to read the content aloud, but it needs network connection.
+
+---
+
+#### **Performance Benchmark:**
+
+- Encrypted approximately 100,000 characters under full 48-layer mode
+- Tested on:
+
+  - **Intel Core i5-13420H**, RTX 2050 GPU, 16GB RAM DDR5
+
+    - Result: ~30 seconds
+
+  - **Intel Core i7-8650U**, Intel UHD 620, 16GB RAM DDR3
+    - Result: ~1 minute 30 seconds
+
+- Environment: Windows 11, Python 3.13
+- Result: The program performs faster on higher-end CPUs
+- Note: Less size = Faster speeds and vice versa
+
+---
+
+#### **License:**
+
+Tlock is distributed under a custom MIT-style license.  
+Commercial use requires prior written permission from the author.  
+All rights to the name “Tlock” and its protocol specification are reserved by Ahmed Omar Saad.
+
+For full license details, refer to the `LICENSE` file.
+
+---
+
+Source code: [github.com/ahmedomar2014/Tlock](https://github.com/ahmedomar2014/Tlock), But don't forget to read the license😉.
 
 ---
 
 ## **Keep In Touch!**
 
-You can get help by contacting us by these ways:
+You can get help or a business inquiry by contacting me by these ways:
 
 - Phone Number: +201040946638
 - Email: ahmedomardev@outlook.com
+- Alt Email: ahmedomarhuawei@gmail.com
