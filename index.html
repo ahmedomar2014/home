@@ -108,11 +108,23 @@
             
             <li class="nav-item" data-bs-level="1"><a href="#aosp" class="nav-link">AOSP</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#latest-projects" class="nav-link">Latest Projects:</a>
+            <li class="nav-item" data-bs-level="2"><a href="#latest-projects" class="nav-link">Latest Projects</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#keep-in-touch" class="nav-link">Keep In Touch!</a>
+            <li class="nav-item" data-bs-level="2"><a href="#releases" class="nav-link">Releases</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#packages" class="nav-link">Packages</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#deployments" class="nav-link">Deployments</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#contact" class="nav-link">Contact</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -124,214 +136,187 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="aosp">AOSP</h1>
-<h2 id="latest-projects"><em>Latest Projects:</em></h2>
-<h3 id="ftpchat-file-transfer-chatting-project"><strong>FTPChat (File Transfer Chatting Project)</strong></h3>
-<h4 id="overview"><strong>Overview:</strong></h4>
+<h2 id="latest-projects">Latest Projects</h2>
+<h3 id="ftpchat-file-transfer-chatting-project">FTPChat (File Transfer Chatting Project)</h3>
+<p><strong>Encrypted FTP-Based Messaging Protocol</strong><br />
+<strong>Version 1.4 — November 2025</strong><br />
+<strong>Author:</strong> Ahmed Omar Saad<br />
+<strong>Contact:</strong> <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#104;&#109;&#101;&#100;&#111;&#109;&#97;&#114;&#100;&#101;&#118;&#64;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#109;">&#97;&#104;&#109;&#101;&#100;&#111;&#109;&#97;&#114;&#100;&#101;&#118;&#64;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#109;</a>  </p>
+<p>FTPChat © 2025/5/20 by Ahmed Omar Saad is licensed under <strong>CC BY-NC-SA 4.0</strong>.<br />
+To view a copy of this license, visit <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">https://creativecommons.org/licenses/by-nc-sa/4.0/</a>  </p>
+<hr />
+<h4 id="overview">Overview</h4>
 <p>FTPChat is a lightweight, encrypted messaging protocol implemented entirely in Python.<br />
-It facilitates secure communication by reading and writing messages to a shared file hosted on an FTP server.</p>
+It facilitates secure communication by reading and writing messages to a shared file hosted on an FTP server.  </p>
 <p>FTPChat is specifically designed for deployment in legacy environments, including low-power routers equipped with USB and FTP capabilities. This makes it an ideal solution for resource-constrained scenarios or discreet operations.</p>
-<h4 id="key-features"><strong>Key Features:</strong></h4>
+<hr />
+<h4 id="key-features-v14">Key Features (v1.4)</h4>
 <ul>
-<li>24-layer encryption ensuring robust payload security</li>
-<li>File-based transport mechanism utilizing FTP</li>
-<li>Fully operational within a single <code>.py</code> file</li>
-<li>Optimized for legacy hardware and low-power devices</li>
-<li>Compatible with routers supporting USB and FTP</li>
-<li>Energy-efficient and environmentally conscious design</li>
-<li>You can also chat internationally (Non LAN) by using <a href="https://sftpcloud.io/tools/free-ftp-server">SFTPCloud Tool</a> a free tool that you can make a globally accessible FTP server</li>
-<li>You can also make it work locally by using our guide <code>Documentation/Quick Start Guide (Making FTP Server).md</code></li>
+<li>24-layer encryption ensuring robust payload security  </li>
+<li>File-based transport mechanism utilizing FTP/FTPS fallback  </li>
+<li>Single <code>.py</code> file deployment for simplicity  </li>
+<li>Optimized for legacy hardware and low-power devices  </li>
+<li>International chatting via <a href="https://sftpcloud.io/tools/free-ftp-server">SFTPCloud Tool</a>  </li>
+<li>Local LAN support with <code>Documentation/Quick Start Guide (Making FTP Server).md</code>  </li>
+<li>Threaded send/receive — no UI freezing during FTP operations  </li>
+<li>Auto-refresh loop with restart-safe scheduling  </li>
+<li>Modern UI with ttkbootstrap (dark theme, styled buttons)  </li>
+<li>Blue primary buttons for clarity and aesthetics  </li>
+<li>Non-editable chat history with scrollable view  </li>
+<li>Modular encryption pipeline (easy to extend with new ciphers)  </li>
 </ul>
-<h4 id="protocol-operation"><strong>Protocol Operation:</strong></h4>
+<hr />
+<h4 id="new-features-added-in-v14">New Features Added in v1.4</h4>
+<ul>
+<li>Threaded FTP I/O: Both sending and reading run in background threads for smooth, non-blocking UI  </li>
+<li>Improved Error Handling: Clear fallbacks between FTP_TLS and FTP, with user-friendly error messages  </li>
+<li>Styled UI Elements: Buttons themed with ttkbootstrap’s <code>primary</code> style for a modern look  </li>
+<li>Auto-Scroll Chat Window: Messages always scroll to the latest entry  </li>
+<li>Help Menu Integration: Direct link to project documentation and exit option  </li>
+<li>Restart-Safe Loop Control: Auto-refresh loop can be started once and remains stable  </li>
+<li>Encryption Pipeline Refactor: Doubled 12-layer MAC encryption plus compression for symbolic resilience  </li>
+</ul>
+<hr />
+<h4 id="protocol-operation">Protocol Operation</h4>
 <p>Messages are exchanged via a shared file on an FTP server.<br />
-Each message contains a timestamp, username, and encrypted content.<br />
-The protocol provides:</p>
-<ul>
-<li>Conflict-safe message writing</li>
-<li>Encrypted message formatting</li>
-<li>Lightweight, file-based communication</li>
-</ul>
-<p><strong>Note:</strong> FTPChat does not support auto-refresh or background polling.</p>
-<h4 id="usage-instructions"><strong>Usage Instructions:</strong></h4>
+Each message contains a timestamp, username, and encrypted content.  </p>
+<p>The protocol provides:
+- Conflict-safe message writing<br />
+- Encrypted message formatting<br />
+- Lightweight, file-based communication  </p>
+<hr />
+<h4 id="usage-instructions">Usage Instructions</h4>
 <ol>
-<li>Download <code>FtpChat.exe</code> for Windows 10/11, or run the Python script on macOS or Linux.</li>
-<li>Activate your FTP server. Refer to <code>Documentation/Quick Start Guide (Making FTP Server).md</code> for detailed setup instructions.</li>
-<li>Enter your credentials as prompted.</li>
-<li>Please review the <code>Notes Before Starting</code> section prior to use.</li>
+<li>Download <code>FtpChat.exe</code> for Windows 10/11, or run the Python script on macOS/Linux.  </li>
+<li>Activate your FTP server. Refer to <code>Documentation/Quick Start Guide (Making FTP Server).md</code>.  </li>
+<li>Enter your credentials as prompted.  </li>
+<li>Review the <code>Notes Before Starting</code> section prior to use.  </li>
 </ol>
-<h4 id="license"><strong>License:</strong></h4>
-<p>FTPChat is distributed under a custom MIT-style license.<br />
+<hr />
+<h4 id="license">License</h4>
+<p>FTPChat is distributed under the <strong>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</strong>.<br />
 Commercial use is strictly prohibited without written permission from the author.<br />
 All rights to the name “FTPChat” and its protocol specification are reserved by Ahmed Omar Saad.</p>
-<p>For full license details, refer to the `LICENSE</p>
-<p>You can find its source code in this repository: https://github.com/ahmedomar2014/FTPChat, But don't forget to read the license😉.</p>
 <hr />
-<h3 id="tlock-text-locker-encryption-protocol"><strong>Tlock (Text Locker Encryption Protocol)</strong></h3>
-<p><strong>Multi-Format Encryption System</strong><br />
-<strong>Version 1.8 — October 2025</strong><br />
+<h4 id="tlock-text-locker-encryption-protocol">Tlock (Text Locker Encryption Protocol)</h4>
+<p><strong>Secure Text &amp; File Protection Software</strong><br />
+<strong>Version 1.8 — November 2025</strong><br />
 <strong>Author:</strong> Ahmed Omar Saad<br />
-<strong>Contact:</strong> ahmedomardev@outlook.com</p>
+<strong>Contact:</strong> <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#104;&#109;&#101;&#100;&#111;&#109;&#97;&#114;&#100;&#101;&#118;&#64;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#109;">&#97;&#104;&#109;&#101;&#100;&#111;&#109;&#97;&#114;&#100;&#101;&#118;&#64;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#109;</a>  </p>
 <hr />
-<h4 id="overview_1"><strong>Overview:</strong></h4>
-<p>Tlock is a multi-layered encryption protocol designed to secure text, media, and document files with extreme depth and modularity.<br />
-Built entirely in Python, it supports GUI-based workflows, password protection, and clipboard automation for fast and secure file handling.</p>
-<p>Tlock is optimized for environments that need security, offline workflows.</p>
+<h4 id="overview_1">Overview</h4>
+<p>Tlock is a desktop application designed to protect text, files, and code with a simple, accessible interface.<br />
+It combines modern usability features with strong protection, making it suitable for personal projects, education, and professional use.</p>
 <hr />
-<h4 id="key-features_1"><strong>Key Features:</strong></h4>
+<h4 id="key-features-v18">Key Features (v1.8)</h4>
 <ul>
-<li>48-layer encryption cycle</li>
-<li>Supports text, image, audio, video, document, presentation, and spreadsheet formats</li>
-<li>GUI interface with password prompts and text-to-speech</li>
-<li>Clipboard integration for key delivery</li>
-<li>Threading and multiprocessing support</li>
-<li>Fully operational within a single <code>.py</code> file</li>
+<li>Save and open protected text files (<code>.tetf</code>)  </li>
+<li>Encrypt and decrypt any file (<code>.tlock</code>)  </li>
+<li>Built‑in Python &amp; JavaScript IDEs with secure save/load (<code>.tpy</code>, <code>.tjs</code>)  </li>
+<li>Accessibility tools: microphone input (speech‑to‑text) and text‑to‑speech  </li>
+<li>Fullscreen GUI with menus for text, files, and code  </li>
+<li>File compression for reduced file sizes  </li>
 </ul>
 <hr />
-<h4 id="supported-file-types-gui-menu"><strong>Supported File Types (GUI Menu):</strong></h4>
+<h4 id="installation">Installation</h4>
+<p><strong>Option 1: Portable Executable</strong><br />
+Download and run <code>tlock.exe</code> (portable version) from <a href="https://github.com/ahmedomar2014/Tlock/blob/main/Exe/Tlock.exe">here</a>.</p>
+<p><strong>Option 2: Setup Executable</strong><br />
+Download and install <code>tlock.exe</code> (setup version) from <a href="https://github.com/ahmedomar2014/Tlock/blob/main/Exe/setup/Output/tlock-1.7-amd64.exe">here</a>.</p>
+<hr />
+<h4 id="usage">Usage</h4>
+<p><strong>Text Files</strong><br />
+- Save protected text → <code>.tetf</code><br />
+- Open protected text → requires the key  </p>
+<p><strong>Files</strong><br />
+- Encrypt any file → <code>.tlock</code><br />
+- Decrypt with the key  </p>
+<p><strong>Code IDEs</strong><br />
+- Save/load protected Python (<code>.tpy</code>) or JavaScript (<code>.tjs</code>) files<br />
+- Run code directly inside the IDE  </p>
+<p><strong>Accessibility</strong><br />
+- Microphone Writer → speech recognition<br />
+- Text‑to‑Speech → listen to decrypted content  </p>
+<hr />
+<h3 id="file-types">File Types</h3>
 <table>
 <thead>
 <tr>
-<th>File Type</th>
 <th>Extension</th>
-<th>Menu Label</th>
+<th>Purpose</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Text</td>
 <td><code>.tetf</code></td>
-<td>Text Files</td>
+<td>Protected text files</td>
 </tr>
 <tr>
-<td>Image</td>
-<td><code>.teif</code></td>
-<td>Image Files</td>
+<td><code>.tlock</code></td>
+<td>Protected binary files</td>
 </tr>
 <tr>
-<td>Audio</td>
-<td><code>.teaf</code></td>
-<td>Audio Files</td>
+<td><code>.tpy</code></td>
+<td>Protected Python code</td>
 </tr>
 <tr>
-<td>Video</td>
-<td><code>.tevf</code></td>
-<td>Video Files</td>
-</tr>
-<tr>
-<td>Word Document</td>
-<td><code>.tedf</code></td>
-<td>Word Files</td>
-</tr>
-<tr>
-<td>PowerPoint</td>
-<td><code>.teppf</code></td>
-<td>Powerpoint Files</td>
-</tr>
-<tr>
-<td>Excel Sheet</td>
-<td><code>.teef</code></td>
-<td>Excel Files</td>
-</tr>
-<tr>
-<td>Access Database</td>
-<td><code>.teadf</code></td>
-<td>Access Files</td>
-</tr>
-<tr>
-<td>Publisher File</td>
-<td><code>.tempf</code></td>
-<td>Publisher Files</td>
-</tr>
-<tr>
-<td>OneNote File</td>
-<td><code>.temof</code></td>
-<td>OneNote Files</td>
-</tr>
-<tr>
-<td>PDF Document</td>
-<td><code>.tepf</code></td>
-<td>PDF Files</td>
-</tr>
-<tr>
-<td>Zip Archive</td>
-<td><code>.tezf</code></td>
-<td>Zip Files</td>
+<td><code>.tjs</code></td>
+<td>Protected JavaScript code</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h4 id="usage-instructions_1"><strong>Usage Instructions:</strong></h4>
-<p><strong>🔐 To Encrypt Files</strong>:</p>
-<ol>
-<li>Run <code>Tlock.exe</code> on Windows.</li>
-<li>Choose the file type you wish to encrypt.</li>
-<li>A key will be generated and auto-copied for later access for the file.</li>
-<li>The encrypted file will be saved with a <code>.te*</code> extension.</li>
-</ol>
-<p><strong>🔓 To Decrypt Files</strong>:</p>
-<ol>
-<li>Run <code>Tlock.exe</code> on Windows.</li>
-<li>Choose the file type you wish to decrypt.</li>
-<li>Enter the decryption key that was auto-copied.</li>
-<li>The decrypted file will be restored to its original format (e.g., <code>.txt</code>, <code>.jpg</code>, <code>.mp3</code>, <code>.docx</code>, etc.).</li>
-<li>You can view or play the decrypted content immediately after recovery.</li>
-</ol>
-<p><strong>🔐 To Encrypt Text Files</strong>:</p>
-<ol>
-<li>Run <code>Tlock.exe</code> on Windows.</li>
-<li>Navigate to the <strong>Text Files</strong> menu and select <strong>Save a Tetf</strong>.</li>
-<li>Type or paste your text into the input field.</li>
-<li>Enter a password when prompted.</li>
-<li>Save the encrypted file when prompted. It will be saved with a <code>.tetf</code> extension.</li>
-</ol>
-<p><strong>🔓 To Decrypt Text Files</strong>:</p>
-<ol>
-<li>Run <code>Tlock.exe</code> on Windows.</li>
-<li>Navigate to the <strong>Text Files</strong> menu and select <strong>Open a Tetf</strong>.</li>
-<li>Choose the <code>.tetf</code> file you wish to decrypt.</li>
-<li>Enter the correct password when prompted.</li>
-<li>The decrypted content will be displayed in a new window.</li>
-<li>You can optionally activate <strong>Text to Speech</strong> to read the content aloud, but it needs network connection.</li>
-</ol>
+<h4 id="license_1">License</h4>
+<p>Tlock is distributed under a <strong>custom MIT‑style license</strong>.  </p>
+<ul>
+<li>Free for personal and educational use.  </li>
+<li><strong>Commercial use requires prior written permission from the author.</strong>  </li>
+<li><strong>The author reserves the right to relicense this software as closed‑source or commercial at any time.</strong>  </li>
+<li>All rights to the name “Tlock” and its protocol specification are retained by Ahmed Omar Saad.  </li>
+</ul>
+<p><strong>FTPChat  © 2023/8/20 by Ahmed Omar Saad is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/</strong></p>
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+<p>Notes:<br />
+The author may offer separate commercial licenses for enterprise or closed‑source use. Contact <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#104;&#109;&#101;&#100;&#111;&#109;&#97;&#114;&#100;&#101;&#118;&#64;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#109;">&#97;&#104;&#109;&#101;&#100;&#111;&#109;&#97;&#114;&#100;&#101;&#118;&#64;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#109;</a> for inquiries.<br />
+This license applies to all source code, documentation, and project specifications included in the Tlock project.<br />
+Further details in <a href="https://github.com/ahmedomar2014/Tlock/blob/main/LICENSE"><code>LICENSE</code></a>.</p>
 <hr />
-<h4 id="performance-benchmark"><strong>Performance Benchmark:</strong></h4>
+<h2 id="releases">Releases</h2>
 <ul>
-<li>Encrypted approximately 100,000 characters under full 48-layer mode</li>
-<li>
-<p>Tested on:</p>
-</li>
-<li>
-<p><strong>Intel Core i5-13420H</strong>, RTX 2050 GPU, 16GB RAM DDR5</p>
-<ul>
-<li>Result: ~30 seconds</li>
-</ul>
-</li>
-<li>
-<p><strong>Intel Core i7-8650U</strong>, Intel UHD 620, 16GB RAM DDR3</p>
-<ul>
-<li>Result: ~1 minute 30 seconds</li>
-</ul>
-</li>
-<li>
-<p>Environment: Windows 11, Python 3.13</p>
-</li>
-<li>Result: The program performs faster on higher-end CPUs</li>
-<li>Note: Less size = Faster speeds and vice versa</li>
+<li><strong>FTPChat v1.5 — November 2025</strong></li>
+<li>Threaded FTP I/O, restart‑safe auto‑refresh, ttkbootstrap UI</li>
+<li><strong>Tlock v1.8 — November 2025</strong></li>
+<li>48‑layer encryption, multi‑format support, accessibility tools</li>
 </ul>
 <hr />
-<h4 id="license_1"><strong>License:</strong></h4>
-<p>Tlock is distributed under a custom MIT-style license.<br />
-Commercial use requires prior written permission from the author.<br />
-All rights to the name “Tlock” and its protocol specification are reserved by Ahmed Omar Saad.</p>
-<p>For full license details, refer to the <code>LICENSE</code> file.</p>
-<hr />
-<p>Source code: <a href="https://github.com/ahmedomar2014/Tlock">github.com/ahmedomar2014/Tlock</a>, But don't forget to read the license😉.</p>
-<hr />
-<h2 id="keep-in-touch"><strong>Keep In Touch!</strong></h2>
-<p>You can get help or a business inquiry by contacting me by these ways:</p>
+<h2 id="packages">Packages</h2>
+<h3 id="ftpchat">FTPChat</h3>
 <ul>
-<li>Phone Number: +201040946638</li>
-<li>Email: ahmedomardev@outlook.com</li>
-<li>Alt Email: ahmedomarhuawei@gmail.com</li>
+<li><strong>Windows executable</strong>: <a href="https://github.com/ahmedomar2014/FTPChat/releases">Download from Releases</a></li>
+<li><strong>Python source</strong>: <a href="https://github.com/ahmedomar2014/FTPChat">View on GitHub</a></li>
+</ul>
+<h3 id="tlock">Tlock</h3>
+<ul>
+<li><strong>Windows executable</strong>: <a href="https://github.com/ahmedomar2014/Tlock/releases">Download from Releases</a></li>
+<li><strong>Python source</strong>: <a href="https://github.com/ahmedomar2014/Tlock">View on GitHub</a></li>
+</ul>
+<hr />
+<h2 id="deployments">Deployments</h2>
+<h3 id="ftpchat_1">FTPChat</h3>
+<ul>
+<li>Local LAN setup guide: <code>Documentation/Quick Start Guide (Making FTP Server).md</code></li>
+<li>Global deployment via <a href="https://sftpcloud.io/tools/free-ftp-server">SFTPCloud Tool</a></li>
+</ul>
+<h3 id="tlock_1">Tlock</h3>
+<ul>
+<li>Desktop deployment: Windows 10/11 (portable and setup executables)</li>
+<li>Planned: Linux/macOS builds</li>
+</ul>
+<hr />
+<h2 id="contact">Contact</h2>
+<ul>
+<li>Phone: +201040946638  </li>
+<li>Email: <a href="mailto:ahmedomardev@outlook.com">ahmedomardev@outlook.com</a>  </li>
 </ul></div>
             </div>
         </div>
@@ -414,5 +399,5 @@ All rights to the name “Tlock” and its protocol specification are reserved b
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2025-10-17 20:26:47.016798+00:00
+Build Date UTC : 2025-11-24 13:05:59.485047+00:00
 -->
